@@ -9,8 +9,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/app-td",
-          "awslogs-region": "eu-west-2",
+          "awslogs-group": "/ecs/aws-app",
+          "awslogs-region": "eu-west-3",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -73,7 +73,7 @@
       "environment": [
         {
           "name": "APPMESH_VIRTUAL_NODE_NAME",
-          "value": "mesh/phalcon-appmesh/virtualNode/app"
+          "value": "mesh/phalcon-env/virtualNode/app"
         }
       ],
       "resourceRequirements": null,
@@ -87,7 +87,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "840364872350.dkr.ecr.eu-west-2.amazonaws.com/aws-appmesh-envoy:v1.24.0.0-prod",
+      "image": "840364872350.dkr.ecr.eu-west-3.amazonaws.com/aws-appmesh-envoy:v1.24.0.0-prod",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -123,8 +123,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:222191613406:task-definition/app-td:2",
-  "family": "app-td",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/aws-app:1",
+  "family": "aws-app",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -215,7 +215,7 @@
     "cpuArchitecture": null
   },
   "cpu": "512",
-  "revision": 2,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": {
