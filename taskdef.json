@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/29nov-app",
+          "awslogs-group": "/ecs/aws-nginx",
           "awslogs-region": "eu-west-3",
           "awslogs-stream-prefix": "ecs"
         }
@@ -123,8 +123,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/29nov-app:2",
-  "family": "29nov-app",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/aws-nginx:1",
+  "family": "aws-nginx",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -215,7 +215,7 @@
     "cpuArchitecture": null
   },
   "cpu": "512",
-  "revision": 2,
+  "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": {
