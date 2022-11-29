@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/aws-app",
+          "awslogs-group": "/ecs/29nov-app",
           "awslogs-region": "eu-west-3",
           "awslogs-stream-prefix": "ecs"
         }
@@ -123,8 +123,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/aws-app:1",
-  "family": "aws-app",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/29nov-app:1",
+  "family": "29nov-app",
   "requiresAttributes": [
     {
       "targetId": null,
