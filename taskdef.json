@@ -9,8 +9,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/aws-app",
-          "awslogs-region": "eu-west-1",
+          "awslogs-group": "/ecs/cg-app",
+          "awslogs-region": "eu-west-3",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -37,7 +37,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": <APP>,
+      "image": "222191613406.dkr.ecr.eu-west-3.amazonaws.com/aws-app:latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-1:222191613406:task-definition/aws-app:1",
-  "family": "aws-app",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/cg-app:1",
+  "family": "cg-app",
   "requiresAttributes": [
     {
       "targetId": null,
