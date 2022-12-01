@@ -123,7 +123,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/app-cf:4",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/app-cf:10",
   "family": "app-cf",
   "requiresAttributes": [
     {
@@ -215,7 +215,7 @@
     "cpuArchitecture": null
   },
   "cpu": "512",
-  "revision": 4,
+  "revision": 10,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": {
