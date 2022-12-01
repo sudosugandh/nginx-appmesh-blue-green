@@ -64,10 +64,18 @@
     {
       "dnsSearchDomains": null,
       "environmentFiles": null,
-      "logConfiguration": null,
-      "entryPoint": null,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": null,
+        "options": {
+          "awslogs-group": "/ecs/app-cf",
+          "awslogs-region": "eu-west-3",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "entryPoint": [],
       "portMappings": [],
-      "command": null,
+      "command": [],
       "linuxParameters": null,
       "cpu": 0,
       "environment": [
@@ -123,7 +131,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/app-cf:10",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/app-cf:12",
   "family": "app-cf",
   "requiresAttributes": [
     {
@@ -215,7 +223,7 @@
     "cpuArchitecture": null
   },
   "cpu": "512",
-  "revision": 10,
+  "revision": 12,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": {
