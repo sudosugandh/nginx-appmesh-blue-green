@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/app-tdd",
+          "awslogs-group": "/ecs/app",
           "awslogs-region": "eu-west-3",
           "awslogs-stream-prefix": "ecs"
         }
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/app-tdd:1",
-  "family": "app-tdd",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-3:222191613406:task-definition/app:1",
+  "family": "app",
   "requiresAttributes": [
     {
       "targetId": null,
